@@ -6,12 +6,12 @@
 /*   By: a1-6 <a1-6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 17:55:54 by username          #+#    #+#             */
-/*   Updated: 2026/11/11 21:17:17 by a1-6             ###   ########.fr       */
+/*   Updated: 2026/11/11 21:43:48 by a1-6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "ft_list.h"
+#include "libft.h"
 #include <stdio.h>
 
 t_list	*ft_lstnew(void *content)

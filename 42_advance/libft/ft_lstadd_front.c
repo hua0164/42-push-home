@@ -6,11 +6,11 @@
 /*   By: a1-6 <a1-6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 17:55:55 by username          #+#    #+#             */
-/*   Updated: 2026/11/11 21:27:42 by a1-6             ###   ########.fr       */
+/*   Updated: 2026/11/11 21:44:15 by a1-6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_list.h"
+#include "libft.h"
 #include <stdio.h>
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
