@@ -6,7 +6,7 @@
 /*   By: a1-6 <a1-6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 00:18:38 by username          #+#    #+#             */
-/*   Updated: 2026/11/12 13:09:19 by a1-6             ###   ########.fr       */
+/*   Updated: 2026/11/12 14:10:28 by a1-6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-static void	*plus_one(void *content)
-{
-	int	*new;
+// static void	*plus_one(void *content)
+// {
+// 	int	*new;
 
-	new = malloc(sizeof(int));
-	if (!new)
-		return (NULL);
-	*new = *(int *) content + 1;
-	return (new);
-}
-
-static void	del(void *content)
-{
-	free(content);
-}
+// 	new = malloc(sizeof(int));
+// 	if (!new)
+// 		return (NULL);
+// 	*new = *(int *) content + 1;
+// 	return (new);
+// }
 
 t_list	*if_fail(t_list **node, void *content, void (*del)(void *))
 {

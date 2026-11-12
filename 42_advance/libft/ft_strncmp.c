@@ -6,14 +6,14 @@
 /*   By: a1-6 <a1-6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 18:59:48 by username          #+#    #+#             */
-/*   Updated: 2026/11/07 19:41:40 by a1-6             ###   ########.fr       */
+/*   Updated: 2026/11/12 14:38:37 by a1-6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include <stdio.h>
 
-int	strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 

@@ -6,7 +6,7 @@
 /*   By: a1-6 <a1-6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 23:24:45 by username          #+#    #+#             */
-/*   Updated: 2026/11/12 00:00:10 by a1-6             ###   ########.fr       */
+/*   Updated: 2026/11/12 12:57:14 by a1-6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-static void	del(void *content)
+void	del(void *content)
 {
 	free(content);
 }

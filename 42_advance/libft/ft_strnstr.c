@@ -6,7 +6,7 @@
 /*   By: a1-6 <a1-6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 19:43:20 by username          #+#    #+#             */
-/*   Updated: 2026/11/07 19:51:40 by a1-6             ###   ########.fr       */
+/*   Updated: 2026/11/12 15:02:41 by a1-6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t	i;
 
 	i = 0;
-	while (i < n && s1[i] && s2[i] && s1[i] == s2[i])
+	while (i < n && s1[i] && s2[i] && (unsigned char) s1[i] == (unsigned char) s2[i])
 		i++;
 	if (i == n)
 		return (0);
-	return ((unsigned char) s1[i] - (unsigned char) s2[i]);
+	return (s1[i] - s2[i]);
 }
 
 char	*ft_strnstr(char *haystack, char *needle, size_t len)
@@ -36,7 +36,7 @@ char	*ft_strnstr(char *haystack, char *needle, size_t len)
 	if (len_needle == 0)
 		return (haystack);
 	i = 0;
-	while (i < len && haystack[i])
+	while (i < len && len_needle <= len - i && haystack[i])
 	{
 		if (ft_strncmp(&haystack[i], needle, len_needle) == 0)
 			return (haystack + i);

@@ -6,7 +6,7 @@
 /*   By: a1-6 <a1-6@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 18:52:41 by username          #+#    #+#             */
-/*   Updated: 2026/11/07 18:57:44 by a1-6             ###   ########.fr       */
+/*   Updated: 2026/11/12 14:54:50 by a1-6             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strrchr(const char *s, int c)
 		i++;
 	while (i >= 0)
 	{
-		if (s[i] == c)
+		if ((unsigned char) s[i] == (unsigned char) c)
 			return ((char *) s + i);
 		i--;
 	}
